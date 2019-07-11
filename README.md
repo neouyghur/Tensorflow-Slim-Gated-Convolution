@@ -2,6 +2,7 @@
 
 
 ```
+from gated_convolution import *
 
 with slim.arg_scope([slim.batch_norm], is_training=phase_train):
     with slim.arg_scope([gated_conv2d, gated_NNdeconv2d],
